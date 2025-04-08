@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Algología - Estudio de las Algas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-algae"></div>
+    <img src="img/Alga.png" class="floating-alga" alt="Alga flotante">
+    
+    <div class="container">
+        <h1>Algología 🌿</h1>
+        <nav>
+            <button onclick="showSection('que-es')">¿Qué es un alga?</button>
+            <button onclick="showSection('tipos')">Tipos de algas</button>
+            <button onclick="showSection('ecologica')">Importancia Ecológica</button>
+            <button onclick="showSection('medicinal')">Importancia Medicinal</button>
+            <button onclick="showSection('ornamental')">Importancia Ornamental</button>
+            <button onclick="showSection('biotecnologica')">Importancia Biotecnológica</button>
+        </nav>
+
+        <section id="que-es" class="content active">
+            <h2>¿Qué es un alga?</h2>
+            <p>Las algas son organismos fotosintéticos acuáticos, que pueden ser unicelulares (microalgas) o multicelulares (macroalgas). No tienen raíces, tallos ni hojas verdaderas.</p>
+        </section>
+
+        <section id="tipos" class="content">
+            <h2>Tipos de Algas</h2>
+            <p><strong>Microalgas:</strong> Son algas microscópicas, como las diatomeas o la espirulina.</p>
+            <p><strong>Macroalgas:</strong> Son visibles a simple vista, como las algas rojas, pardas y verdes.</p>
+        </section>
+
+        <section id="ecologica" class="content">
+            <h2>Importancia Ecológica</h2>
+            <p>Producen oxígeno, forman parte del fitoplancton, son la base de la cadena alimenticia marina y contribuyen al equilibrio de los ecosistemas acuáticos.</p>
+        </section>
+
+        <section id="medicinal" class="content">
+            <h2>Importancia Medicinal</h2>
+            <p>Se usan en tratamientos antivirales, antiinflamatorios, y en suplementos alimenticios por su alto valor nutricional.</p>
+        </section>
+
+        <section id="ornamental" class="content">
+            <h2>Importancia Ornamental</h2>
+            <p>Muchas macroalgas se utilizan en acuarios y paisajismo acuático por sus colores y formas atractivas.</p>
+        </section>
+
+        <section id="biotecnologica" class="content">
+            <h2>Importancia Biotecnológica</h2>
+            <p>Se utilizan en biocombustibles, cosméticos, productos farmacéuticos, y en la biorremediación de ambientes contaminados.</p>
+        </section>
+
+        <div class="gallery">
+            <img src="img/Imag1.png" alt="Alga natural" onclick="zoomImage(this)">
+            <img src="img/Imag2.png" alt="Microalga" onclick="zoomImage(this)">
+            <img src="img/Imag3.png" alt="Alga roja" onclick="zoomImage(this)">
+        </div>
+    </div>
+
+    <div id="lightbox" onclick="closeZoom()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
